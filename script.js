@@ -18,8 +18,7 @@ $('#yr').textContent = new Date().getFullYear();
 // Gallery: show a real photo in each tile when its file exists
 document.querySelectorAll('.ph[data-photo]').forEach(fig => {
   const img = new Image();
-  img.alt = fig.querySelector('figcaption').textContent;
-  img.loading = 'lazy';
+  img.alt = fig.querySelector('.cap').firstChild.textContent.trim();
   img.onload = () => fig.prepend(img);
   img.src = fig.dataset.photo;
 });

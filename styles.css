@@ -108,7 +108,7 @@ h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:800;color:var(--navy);max-width:
 .panel::before{content:"";position:absolute;width:340px;height:340px;right:-110px;top:-110px;border-radius:50%;opacity:.5}
 .panel-blue{background:linear-gradient(160deg,var(--royal-2),var(--royal) 45%,var(--navy));color:#fff}
 .panel-blue::before{background:radial-gradient(circle,var(--royal-2),transparent 70%)}
-.panel-gold{background:linear-gradient(160deg,#ffe29a,var(--gold));color:var(--navy)}
+.panel-gold{background:linear-gradient(160deg,#fffaf0,#f7e7bd);color:var(--navy);border:1px solid #ecd28e}
 .panel-gold::before{background:radial-gradient(circle,#fff6,transparent 70%)}
 .panel h3{font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;position:relative}
 .panel p{max-width:46ch;position:relative;opacity:.9}
@@ -133,26 +133,27 @@ h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:800;color:var(--navy);max-width:
 .b-dark{background:var(--navy);border-color:var(--navy)}
 .b-dark h4,.b-dark p{color:#fff}.b-dark p{opacity:.8}
 .b-dark svg{stroke:var(--gold)}
-.b-gold{background:#fff6dc;border-color:#f6dc95}
+.b-gold{background:#fffaf0;border-color:#ecd28e}
 .b-gold svg{stroke:#b07800}
 
 /* gallery */
 .gal-sec{background:var(--card)}
 .gal-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;margin-top:36px}
-.ph{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--navy)}
+.ph{position:relative;margin:0;display:block;text-decoration:none;border-radius:var(--r);overflow:hidden;background:var(--navy)}
 .ph::before{content:"";position:absolute;inset:0;background:url('assets/cnr-logo.png') center/90px no-repeat;opacity:.22;transition:transform .6s}
 .ph::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,#ffffff08 0 14px,transparent 14px 28px)}
-.ph-1{grid-column:span 2;grid-row:span 2;background:linear-gradient(150deg,var(--royal-2),var(--navy))}
-.ph-2{background:linear-gradient(150deg,var(--gold-2),#e0901c)}
-.ph-3{background:linear-gradient(150deg,#1fb86a,#0d6b3c)}
-.ph-4{grid-column:span 2;background:linear-gradient(150deg,#1b2a6b,#3d5cf0)}
+.ph-1{grid-column:span 2;grid-row:span 2;background:linear-gradient(150deg,#2b47c9,var(--navy))}
+.ph-2{background:linear-gradient(150deg,#1d2c6e,#0e1a4a)}
+.ph-3{background:linear-gradient(150deg,#28408f,#121f57)}
+.ph-4{grid-column:span 2;background:linear-gradient(150deg,#16245e,#2b47c9)}
 .ph-5,.ph-6{grid-column:span 2}
-.ph-5{background:linear-gradient(150deg,#2a3354,#0a1338)}
-.ph-6{background:linear-gradient(150deg,#ffcf5a,#f29c30)}
+.ph-5{background:linear-gradient(150deg,#22305f,#0a1338)}
+.ph-6{background:linear-gradient(150deg,#1f3fbf,#16245e)}
 .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .7s}
 .ph:hover img,.ph:hover::before{transform:scale(1.06)}
-.ph figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:40px 18px 14px;color:#fff;font-weight:700;background:linear-gradient(transparent,rgba(10,19,56,.85))}
+.ph .cap small{font-weight:600;font-size:.78rem;color:var(--gold-2);opacity:.9}
+.ph .cap{display:flex;flex-direction:column;gap:2px;position:absolute;left:0;right:0;bottom:0;z-index:2;padding:40px 18px 14px;color:#fff;font-weight:700;background:linear-gradient(transparent,rgba(10,19,56,.85))}
 
 /* admissions */
 .adm{background:radial-gradient(800px 400px at 10% 0%,#22348c,transparent 60%),var(--navy);color:#fff}
@@ -170,6 +171,8 @@ h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:800;color:var(--navy);max-width:
 .info div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding-block:14px;border-bottom:1px solid var(--line)}
 .info dt{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);padding-top:3px}
 .info dd{margin:0;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.links{display:flex;flex-wrap:wrap;gap:6px 16px}
+.map-links{display:flex;flex-wrap:wrap;gap:10px}
 .info a{color:var(--royal);text-decoration-color:var(--gold);text-underline-offset:4px}
 .form{display:flex;flex-direction:column;gap:6px;padding:32px;border-radius:28px;background:var(--card);border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(10,19,56,.5)}
 .form h3{font-size:1.4rem;color:var(--navy);margin-bottom:10px}
