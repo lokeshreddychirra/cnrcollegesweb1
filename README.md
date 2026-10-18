@@ -1,8 +1,10 @@
-# CNR Colleges & CNR School of Excellence — Gudipala, Andhra Pradesh
+# CNR Group of Institutions — Gudipala
 
-Static website (HTML/CSS/JS, no build step). Open `index.html` or host on GitHub Pages / Netlify.
+Website for CNR Degree College and CNR School of Excellence, Gudipala Mandal, Chittoor, Andhra Pradesh 517132.
+Plain HTML/CSS/JS, no build step: open `index.html`, or host on GitHub Pages / Netlify.
 
-## Customize
-- Real photos: drop `gallery-1.jpg` … `gallery-6.jpg` into `assets/`.
-- Phone / WhatsApp: edit `WHATSAPP_NUMBER` in `script.js` and the `tel:` links in `index.html`.
-- Courses, address and stats: edit the matching sections in `index.html` (verify with the college office).
+Contact: +91 94904 95645 · cnrcolleges@gmail.com
+
+## Adding photos
+Save photos as `assets/photos/photo-1.jpg` … `photo-6.jpg` (campus, classrooms, students, celebrations, sports, school).
+Each gallery tile shows its photo automatically once the file exists.
