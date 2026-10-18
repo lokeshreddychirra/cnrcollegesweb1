@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CNR Colleges Gudipala</title>
-<meta name="description" content="CNR Group of Institutions, Gudipala Mandal, Chittoor 517132. CNR Degree College and CNR School of Excellence. Call +91 94904 95645.">
+<meta name="description" content="CNR Group of Institutions, Gudipala Mandal, Chittoor 517132. CNR School of Excellence and CNR Degree & Junior College on one campus. Call +91 94904 95645.">
 <link rel="icon" href="assets/cnr-logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
 <div class="topbar">
   <div class="wrap topbar-in">
-    <span>Gudipala Mandal, Chittoor, AP 517132</span>
+    <span>Near Gandhi Statue, Gudipala, Chittoor, AP 517132</span>
     <span class="topbar-links">
       <a href="tel:+919490495645">+91 94904 95645</a>
       <a href="mailto:cnrcolleges@gmail.com">cnrcolleges@gmail.com</a>
@@ -31,7 +31,7 @@
     </a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
     <nav id="menu">
-      <a href="#about">About</a>
+      <a href="#story">Our story</a>
       <a href="#institutions">Institutions</a>
       <a href="#programs">Programs</a>
       <a href="#gallery">Gallery</a>
@@ -42,81 +42,98 @@
   </div>
 </header>
 
-<main>
-<section class="hero">
-  <canvas id="sky" aria-hidden="true"></canvas>
-  <div class="hero-glow" aria-hidden="true"></div>
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="kicker"><span class="te" lang="te">నాణ్యమైన విద్య</span> · Quality education</p>
-      <h1>Bright futures start <em>here in Gudipala.</em></h1>
-      <p class="lead">CNR College was established with the aim of providing quality education for the students. From the first school bell at CNR School of Excellence to a university degree, we walk with every student.</p>
-      <div class="cta">
-        <a class="btn btn-gold" href="#admissions">Admissions open</a>
-        <a class="btn btn-line" href="tel:+919490495645">+91 94904 95645</a>
-      </div>
-    </div>
-    <div class="emblem" aria-hidden="true">
-      <svg class="orbit" viewBox="0 0 400 400">
-        <defs>
-          <path id="ring" d="M200 200 m-160 0 a160 160 0 1 1 320 0 a160 160 0 1 1 -320 0"/>
-        </defs>
-        <circle cx="200" cy="200" r="190" fill="none" stroke="#ffffff22" stroke-dasharray="2 8"/>
-        <circle cx="200" cy="200" r="130" fill="none" stroke="#f2b63055"/>
-        <text font-size="15" letter-spacing="6" fill="#f2b630" font-family="Manrope, sans-serif" font-weight="700">
-          <textPath href="#ring">CNR DEGREE COLLEGE ✦ CNR SCHOOL OF EXCELLENCE ✦ GUDIPALA ✦ </textPath>
-        </text>
-      </svg>
-      <img src="assets/cnr-logo.png" alt="" width="200" height="200">
-      <div class="float f1"><b>100%</b><span>recommend<br>6 Facebook reviews</span></div>
-      <div class="float f2"><b>2011</b><span>Degree college<br>established</span></div>
-      <div class="float f3"><b>SVU</b><span>Affiliated to S.V. University,<br>Tirupati</span></div>
-    </div>
-  </div>
-  <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C 240 10 480 10 720 45 S 1200 90 1440 30 V90 H0Z" fill="#f6f7fb"/></svg>
-</section>
-
-<div class="marquee" aria-hidden="true">
-  <div class="track">
-    <span>CNR Degree &amp; Junior College</span><span>CNR School of Excellence</span><span>Computer Education</span><span>Sri Venkateswara University, Tirupati</span><span>Gudipala Mandal</span><span>For a Bright Tomorrow</span>
-    <span>CNR Degree &amp; Junior College</span><span>CNR School of Excellence</span><span>Computer Education</span><span>Sri Venkateswara University, Tirupati</span><span>Gudipala Mandal</span><span>For a Bright Tomorrow</span>
-  </div>
+<!-- 3D stage: a spiral staircase that the student climbs as the page scrolls -->
+<div class="stage" aria-hidden="true">
+  <canvas id="climb"></canvas>
+  <div class="stage-shade"></div>
+  <ol class="altimeter" id="altimeter">
+    <li data-at="0">School</li>
+    <li data-at="1">Care</li>
+    <li data-at="2">Intermediate</li>
+    <li data-at="3">Degree</li>
+    <li data-at="4">Higher heights</li>
+  </ol>
 </div>
 
-<section id="about" class="section">
-  <div class="wrap about">
-    <div>
-      <p class="label">About CNR</p>
-      <h2>A campus built for the students of our villages</h2>
-      <p>The CNR Group of Institutions serves families across Gudipala Mandal and Chittoor district. We believe a child from a village deserves the same quality of teaching, discipline and opportunity as anyone in a big city.</p>
-      <p><strong>C.N.R. Degree College</strong> offers undergraduate programs affiliated to Sri Venkateswara University, Tirupati. <strong>CNR School of Excellence</strong> builds strong foundations in the school years.</p>
+<main>
+<div class="journey" id="journey">
+  <section class="hero">
+    <div class="wrap hero-copy">
+      <p class="kicker"><span class="te" lang="te">నాణ్యమైన విద్య</span> · Quality education</p>
+      <h1>Every student<br>can climb <em>higher.</em></h1>
+      <p class="lead">At CNR in Gudipala, we walk with students from their first classroom to a university degree. One campus, one family, and a staircase that keeps going up.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="#story">Follow the climb ↓</a>
+        <a class="btn btn-line" href="tel:+919490495645">+91 94904 95645</a>
+      </div>
+      <ul class="hero-tags">
+        <li><b>School</b> to <b>Degree</b> on one campus</li>
+        <li>Degree college since <b>2011</b></li>
+        <li>Affiliated to <b>S.V. University</b>, Tirupati</li>
+      </ul>
     </div>
-    <blockquote class="quote">
-      <svg width="44" height="34" viewBox="0 0 44 34" aria-hidden="true"><path d="M0 34V20C0 8 6 1 18 0v7c-6 1-9 5-9 11h9v16zm26 0V20c0-12 6-19 18-20v7c-6 1-9 5-9 11h9v16z" fill="currentColor"/></svg>
-      <p>CNR College was established with the aim of providing quality education for the students.</p>
-      <cite>Our founding mission</cite>
-    </blockquote>
-  </div>
-  <div class="wrap facts">
-    <div><b data-count="2011">2011</b><span>Degree college established</span></div>
-    <div><b data-count="100" data-suffix="%">100%</b><span>Recommend us (6 reviews)</span></div>
-    <div><b>2</b><span>Institutions on one mission</span></div>
-  </div>
-</section>
+  </section>
 
+  <section id="story" class="story" aria-label="Our story">
+    <article class="chapter" data-step="0">
+      <div class="wrap"><div class="card">
+        <p class="step">Step 1 · CNR School of Excellence</p>
+        <h2>It starts with strong roots</h2>
+        <p>Children begin at CNR School of Excellence, where they build the basics that everything else rests on: reading, mathematics, spoken English and good habits. When a child is struggling, a teacher notices and helps.</p>
+      </div></div>
+    </article>
+    <article class="chapter" data-step="1">
+      <div class="wrap"><div class="card">
+        <p class="step">How we care</p>
+        <h2>We know our students by name</h2>
+        <p>Our students come from Gudipala and the villages around it. For many families, a college education is a new path. Our teachers stay close to every student, keep parents informed and make sure nobody is left behind on the climb.</p>
+        <ul class="care">
+          <li>Personal attention in class</li>
+          <li>Regular updates for parents</li>
+          <li>Guidance on courses and careers</li>
+          <li>Discipline with kindness</li>
+        </ul>
+      </div></div>
+    </article>
+    <article class="chapter" data-step="2">
+      <div class="wrap"><div class="card">
+        <p class="step">Step 2 · CNR Junior College</p>
+        <h2>Choosing a direction</h2>
+        <p>In Intermediate, students choose their stream and prepare for board exams with steady teaching, regular practice tests and teachers who explain until it makes sense.</p>
+      </div></div>
+    </article>
+    <article class="chapter" data-step="3">
+      <div class="wrap"><div class="card">
+        <p class="step">Step 3 · CNR Degree College</p>
+        <h2>A degree that opens doors</h2>
+        <p>Since 2011, our degree college has offered programs affiliated to Sri Venkateswara University, Tirupati, with computer education built in. Graduates leave ready for work and for further study.</p>
+      </div></div>
+    </article>
+    <article class="chapter" data-step="4">
+      <div class="wrap"><div class="card card-gold">
+        <p class="step">The summit</p>
+        <h2>Reaching higher heights</h2>
+        <p>From our campus, students go on to jobs, competitive exams and postgraduate study. Every student who climbs shows the next one what is possible. Your child's climb can start here.</p>
+        <a class="btn btn-gold" href="#admissions">Start the climb</a>
+      </div></div>
+    </article>
+  </section>
+</div>
+
+<div class="after">
 <section id="institutions" class="section inst-sec">
   <div class="wrap">
     <p class="label">Our institutions</p>
     <h2>Two institutions, one campus</h2>
     <div class="inst">
-      <article class="panel panel-blue">
+      <article class="panel panel-blue tilt">
         <span class="tag">Higher education</span>
         <h3>CNR Degree &amp; Junior College</h3>
         <p>Intermediate and undergraduate programs, with degree courses affiliated to Sri Venkateswara University, Tirupati. We prepare students for jobs, competitive exams and higher studies.</p>
         <ul><li>Gudipala campus</li><li>Degree college est. 2011</li><li>SVU affiliated</li></ul>
         <a href="#programs" class="more">See programs <span>→</span></a>
       </article>
-      <article class="panel panel-gold">
+      <article class="panel panel-gold tilt">
         <span class="tag">School</span>
         <h3>CNR School of Excellence</h3>
         <p>For a bright tomorrow. Strong fundamentals, spoken English, values and activities that help every child grow with confidence.</p>
@@ -133,27 +150,27 @@
     <h2>What students learn at CNR</h2>
     <p class="note">Call the office to confirm this year's courses, seats and fees.</p>
     <div class="bento">
-      <div class="b b-wide b-dark">
+      <div class="b b-wide b-dark tilt">
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 18 24 8l20 10-20 10z M12 22v10c0 3 5 6 12 6s12-3 12-6V22 M44 18v12"/></svg>
         <h4>Intermediate and degree programs</h4>
         <p>Junior college (Intermediate) and B.A., B.Sc. and B.Com. streams under Sri Venkateswara University, Tirupati, taught by experienced lecturers.</p>
       </div>
-      <div class="b">
+      <div class="b tilt">
         <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="24" rx="3"/><path d="M16 40h16M24 32v8"/></svg>
         <h4>Computer education</h4>
         <p>Practical computer skills, as named in our emblem.</p>
       </div>
-      <div class="b">
+      <div class="b tilt">
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38V12a4 4 0 0 1 4-4h26v30H12a4 4 0 0 0-4 4 M38 38v4H12"/></svg>
         <h4>School education</h4>
         <p>Primary and high school classes at CNR School of Excellence.</p>
       </div>
-      <div class="b">
+      <div class="b tilt">
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h24v16H18l-8 6v-6H8z M32 20h8v14h-2v5l-6-5H22v-6"/></svg>
         <h4>Spoken English</h4>
         <p>Communication practice that builds confidence.</p>
       </div>
-      <div class="b b-wide3 b-gold">
+      <div class="b b-wide3 b-gold tilt">
         <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="20" r="10"/><path d="M18 28l-4 14 10-5 10 5-4-14"/></svg>
         <h4>Sports, culture and values</h4>
         <p>Games, celebrations, competitions and character building, so students grow in every way.</p>
@@ -232,15 +249,17 @@
     </form>
   </div>
 </section>
-</main>
 
 <footer>
   <div class="wrap foot">
-    <div class="foot-brand"><img src="assets/cnr-logo.png" alt="" width="40" height="40"><div><b>CNR Group of Institutions</b><small>Gudipala Mandal, Chittoor, AP 517132</small></div></div>
+    <div class="foot-brand"><img src="assets/cnr-logo.png" alt="" width="40" height="40"><div><b>CNR Group of Institutions</b><small>Near Gandhi Statue, Gudipala, Chittoor, AP 517132</small></div></div>
     <small>+91 94904 95645 · cnrcolleges@gmail.com · © <span id="yr">2026</span></small>
   </div>
 </footer>
+</div>
+</main>
 
+<script src="assets/vendor/three.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
