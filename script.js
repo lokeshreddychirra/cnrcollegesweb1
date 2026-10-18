@@ -17,13 +17,15 @@ menu.addEventListener('click', e => {
 
 $('#yr').textContent = new Date().getFullYear();
 
-// Gallery: show a real photo in each tile when its file exists
-$$('.ph[data-photo]').forEach(tile => {
-  const img = new Image();
-  img.alt = tile.querySelector('.cap').firstChild.textContent.trim();
-  img.onload = () => tile.prepend(img);
-  img.src = tile.dataset.photo;
-});
+// Course tabs
+const tabs = [...$$('.tabs [role="tab"]')];
+tabs.forEach(tab => tab.addEventListener('click', () => {
+  tabs.forEach(t => {
+    const on = t === tab;
+    t.setAttribute('aria-selected', on);
+    document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+  });
+}));
 
 // WhatsApp enquiry link, rebuilt as the form changes
 const form = $('#enquiry'), wa = $('#wa');
@@ -71,7 +73,7 @@ addEventListener('resize', readScroll);
 readScroll();
 
 // 3D scene: a spiral staircase rising into the night sky. A glowing light (the student)
-// climbs it as the page scrolls, lighting five landmark platforms on the way to the CNR emblem.
+// climbs it as the page scrolls, lighting six landmark platforms on the way to the CNR emblem.
 (function climb() {
   const canvas = $('#climb');
   if (!window.THREE) return;
@@ -85,7 +87,7 @@ readScroll();
   const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 300);
 
   const STEPS = 64, TURN = 0.3, RISE = 0.42, RADIUS = 6;
-  const MILESTONES = [4, 18, 32, 46, 63];
+  const MILESTONES = [4, 15, 26, 37, 48, 63];
   const at = s => {
     const a = s * TURN;
     return new THREE.Vector3(Math.cos(a) * RADIUS, s * RISE, Math.sin(a) * RADIUS);

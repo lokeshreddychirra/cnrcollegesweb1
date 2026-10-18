@@ -1,10 +1,13 @@
 # CNR Group of Institutions — Gudipala
 
-Website for CNR Degree College and CNR School of Excellence, Gudipala Mandal, Chittoor, Andhra Pradesh 517132.
-Plain HTML/CSS/JS, no build step: open `index.html`, or host on GitHub Pages / Netlify.
+Website for CNR School of Excellence, CNR Junior College, CNR Degree College and CNR College of Distance Education,
+near Gandhi Statue, Gudipala, Chittoor, Andhra Pradesh 517132.
+
+Live site: https://lokeshreddychirra.github.io/cnrcollegesweb1/ (served from the `gh-pages` branch)
+
+Plain HTML/CSS/JS, no build step. Three.js is vendored in `assets/vendor/`.
 
 Contact: +91 94904 95645 · cnrcolleges@gmail.com
 
-## Adding photos
-Save photos as `assets/photos/photo-1.jpg` … `photo-6.jpg` (campus, classrooms, students, celebrations, sports, school).
-Each gallery tile shows its photo automatically once the file exists.
+## Photos
+Campus photos live in `assets/photos/`. To add or swap one, replace the file and update the matching `<img>` in `index.html`.
