@@ -94,11 +94,12 @@ h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:800;color:var(--navy);max-width:
 .quote svg{color:var(--gold)}
 .quote p{font-family:var(--f-display);font-size:1.6rem;line-height:1.25;font-weight:700;margin-top:16px;color:#fff}
 .quote cite{display:block;margin-top:18px;font-style:normal;color:var(--gold-2);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border-top:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border-top:1px solid var(--line)}
 .facts div{padding:28px 20px 0;border-left:1px solid var(--line)}
 .facts div:first-child{border-left:0;padding-left:0}
 .facts b{display:block;font-family:var(--f-display);font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;color:var(--royal);font-variant-numeric:tabular-nums;line-height:1}
 .facts span{display:block;margin-top:8px;color:var(--mut);font-size:.9rem}
+@media (max-width:600px){.facts div{padding-inline:10px 0}.facts b{font-size:1.9rem}.facts span{font-size:.8rem}}
 
 /* institutions */
 .inst-sec{background:var(--card)}
@@ -194,8 +195,6 @@ footer{background:var(--navy);color:#c8d0ef;padding-block:28px}
   .bento{grid-template-columns:1fr 1fr}
   .b-wide3{grid-column:span 1}
   .steps{grid-template-columns:1fr 1fr}
-  .facts{grid-template-columns:1fr 1fr}
-  .facts div:nth-child(3){border-left:0;padding-left:0}
   .burger{display:block}
   nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;background:var(--navy);padding:12px max(16px,env(safe-area-inset-right,0px)) 20px max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid #ffffff1a}
   nav.open{display:flex}
